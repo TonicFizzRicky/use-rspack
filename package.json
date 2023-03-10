@@ -1,0 +1,28 @@
+{
+  "name": "use-rspack",
+  "version": "0.0.1",
+  "description": "rspack尝鲜",
+  "main": "index.js",
+  "scripts": {
+    "build-helper": "pnpm tsc helper/define.ts --skipLibCheck",
+    "prepare": "pnpm build-helper",
+    "dev": "rspack serve",
+    "start": "pnpm dev",
+    "build": "rspack build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^0.1.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
